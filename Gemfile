@@ -32,14 +32,23 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+# For SCSS
 gem "bulma-rails", "~> 0.6.1"
+# For generating model and controllers
 gem 'devise', '~> 4.3'
+# to upload images
 gem 'carrierwave', '~> 1.2', '>= 1.2.1'
+# for creating forms
 gem 'simple_form', '~> 3.5'
+# A wrapper for reading image files IMPORTANT: this requires of ImageMagick installed on the user's computer. Installed from https://imagemagick.org/
 gem "mini_magick"
+# For logging impressions
 gem 'impressionist', '~> 1.6'
+# To use jquery on rails (text when moving the mouse over the images shows text of post)
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+# To use avatar on the app
 gem 'gravatar_image_tag'
+#To use likes
 gem 'acts_as_votable', '~> 0.11.1'
 
 group :development, :test do
